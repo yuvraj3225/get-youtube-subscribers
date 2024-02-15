@@ -1,0 +1,32 @@
+{
+  "name": "get-youtube-subscribers",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "http://yuvraj33225.github.io/get-youtube-subscribers",
+  "description": "RESTful API to get YouTube subscribers information.",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "webpack",
+    "test": "mocha '__tests__/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
+    "start": "node src/index.js",
+    "createDB": "node src/createDatabase.js"
+  },
+  "author": "AlmaSquad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "gh-pages": "^6.1.1",
+    "mochawesome": "6.1.1",
+    "mongoose": "^5.10.15",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^16.3.1",
+    "mocha": "^8.2.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
