@@ -11,10 +11,10 @@ require("dotenv").config();
 // const DATABASE_URL = "mongodb://127.0.0.1:27017/subscribers";
 
 // Cluster URI
-const DATABASE_URL = process.env.DATABASE_URI;
+const DATABASE_URL = 'mongodb+srv://yuvraj:Yuvraj@42609@cluster0.xxxxx.mongodb.net/subscribers';
 
 //Connect to MongoDB using Mongoose
-mongoose.connect("mongodb://127.0.0.1:27017", {
+mongoose.connect("mongodb+srv://yuvraj:Yuvraj%4042609@cluster0.ktsfymj.mongodb.net/", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
