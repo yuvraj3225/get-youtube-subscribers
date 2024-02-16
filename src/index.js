@@ -1,4 +1,5 @@
 // Import required modules
+import db from "./data.js"
 const express = require("express");
 const app = require("./app.js");
 const mongoose = require("mongoose");
